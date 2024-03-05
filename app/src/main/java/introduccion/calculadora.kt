@@ -15,7 +15,7 @@ fun rest(int1:Int,int2:Int){
 }
 
 fun mul(int1:Int,int2:Int){
-    println("La multiplicación de ${int1} y ${int2} es ${int1*int2}")
+    println("La multiplicación entre ${int1} y ${int2} es ${int1*int2}")
 }
 
 fun main(){
