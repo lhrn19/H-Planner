@@ -1,2 +1,2 @@
 # Hi-Planner
-Movile app development for daily planning
+Mobile app development for daily planning
