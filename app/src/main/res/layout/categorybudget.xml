@@ -16,35 +16,20 @@
             android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
             android:src="@drawable/bx-menu"/>
-
-        <ImageButton
-            android:id="@+id/menu"
-            android:layout_width="20dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="320dp"
-            android:layout_marginTop="20dp"
-            android:src="@drawable/bx-menu" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/january_spending_categories"
+        android:text="@string/home_budget"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#000000"
         android:textStyle="bold"
         tools:fontFamily="@font/montserrat_medium" />
 
-    <View
-        android:id="@+id/pie_chart"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="40dp"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:gravity="center"
-        android:src="@drawable/bx-menu" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,16 +41,6 @@
         android:background="@drawable/rounded">
 
         <TextView
-            android:id="@+id/title2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/january_budget"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            tools:fontFamily="@font/montserrat_medium" />
-
-        <TextView
             android:id="@+id/amount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -73,18 +48,51 @@
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#000000"
             android:textStyle="bold"
-            tools:fontFamily="@font/montserrat_medium"/>
+            tools:fontFamily="@font/montserrat_medium"
+            android:layout_marginBottom="20dp"/>
 
-        <TextView
-            android:id="@+id/encouragement_message"
+        <Button
+            android:id="@+id/modifybudget"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/keep_it_up_you_can_save_up_to_500_this_month"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:layout_marginStart="160dp"
+            android:backgroundTint="@color/Blue2"
+            android:text="@string/modify_budget"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#000000"
-            tools:fontFamily="@font/montserrat_light" />
+            android:textStyle="bold"
+            tools:fontFamily="@font/montserrat_medium"/>
 
-</LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/graph1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/spending_through_the_week"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        tools:fontFamily="@font/montserrat_medium" />
+
+    <View
+        android:id="@+id/pie_chart"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:gravity="center"
+        android:src="@drawable/bx-menu"/>
+
+    <ImageButton
+        android:id="@+id/returnspending"
+        android:layout_width="20dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/bx-menu"/>
 
 
 </LinearLayout>

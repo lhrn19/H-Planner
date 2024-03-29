@@ -10,4 +10,7 @@
     <string name="food_dinning"><![CDATA[Food & Dinning]]></string>
     <string name="health_fitness"><![CDATA[Health & Fitness]]></string>
     <string name="add_category">Add Category</string>
+    <string name="home_budget">Home Budget</string>
+    <string name="modify_budget">Modify Budget</string>
+    <string name="spending_through_the_week">Spending through the week</string>
 </resources>
