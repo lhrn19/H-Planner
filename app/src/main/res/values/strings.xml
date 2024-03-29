@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">HiPlanner</string>
     <string name="january_spending_categories">January spending categories</string>
+    <string name="this_month_1300">This month $1300</string>
+    <string name="_1300_of_2000">$1300 of $2000</string>
+    <string name="january_budget">January budget</string>
+    <string name="_1_300_of_2_000">$1,300 of $2,000</string>
+    <string name="keep_it_up_you_can_save_up_to_500_this_month">Keep it up! You can save up to $500 this month</string>
+    <string name="home">Home</string>
+    <string name="food_dinning"><![CDATA[Food & Dinning]]></string>
+    <string name="health_fitness"><![CDATA[Health & Fitness]]></string>
+    <string name="add_category">Add Category</string>
 </resources>
