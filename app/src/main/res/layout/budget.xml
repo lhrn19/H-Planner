@@ -9,21 +9,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <ImageButton
-            android:id="@+id/menu"
-            android:layout_width="20dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="20dp"
-            android:src="@drawable/bx-menu"/>
 
         <ImageButton
-            android:id="@+id/menu"
-            android:layout_width="20dp"
+            android:id="@id/menu"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="320dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
-            android:src="@drawable/bx-menu" />
+            android:backgroundTint="@color/white"
+            android:src="@drawable/menu_tres_lineas" />
+
+        <ImageButton
+            android:id="@+id/newcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/add_box" />
     </LinearLayout>
     <TextView
         android:id="@+id/title"
@@ -45,6 +48,14 @@
         android:layout_height="300dp"
         android:gravity="center"
         android:src="@drawable/bx-menu" />
+
+    <ImageButton
+        android:id="@+id/edit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="320dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/arrow_right_alt_fill0_wght400_grad0_opsz24" />
 
     <LinearLayout
         android:layout_width="match_parent"

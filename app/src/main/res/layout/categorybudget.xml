@@ -18,7 +18,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/white"
-            android:srcCompat="@android:drawable/menu_tres_lineas" />
+            android:src="@drawable/menu_tres_lineas" />
     </LinearLayout>
 
     <TextView
