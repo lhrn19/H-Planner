@@ -1,4 +1,4 @@
-package introduccion.POO
+package introduccion.Reto2
 
 class Cancion {
 
@@ -12,7 +12,12 @@ class Cancion {
         get() = field
 
     constructor()
-
+    constructor(nombre: String, artista: String, ano: Int, reproducciones: Int) {
+        this.nombre = nombre
+        this.artista = artista
+        this.ano = ano
+        this.reproducciones = reproducciones
+    }
     fun pedirDatos() {
         println("Ingrese el nombre")
         val n: String = readLine()!!.toString()
