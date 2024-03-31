@@ -15,8 +15,11 @@ class Menu() {
         }
     }
 
-    fun getPlatosByCategoria(categoria: Categoria): List<Plato>? {
-        return platosPorCategoria[categoria]
+    fun getPlatosByCategoria(categoria: Categoria) {
+        for (i in platosPorCategoria[categoria]!!){
+            println(i.nombre)
+        }
+
     }
 
     fun removePlato(plato: Plato): Boolean {
@@ -62,7 +65,7 @@ fun main() {
     menu.agregarPlato(plato1, categoriaComida)
     menu.agregarPlato(plato2, categoriaBebida)
 
-    val todosPlatos = menu.mostrarTodosPlatos()
+    menu.mostrarTodosPlatos()
 
     menu.modificarMenu(plato1, "Pizza Vegetariana", "", 14.50, categoriaComida)
 
