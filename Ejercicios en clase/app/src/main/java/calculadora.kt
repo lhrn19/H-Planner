@@ -1,4 +1,3 @@
-package intro
 import kotlin.math.pow
 import kotlin.math.sqrt
 
@@ -32,7 +31,7 @@ fun calculador(operacion: Int, a: Double, b: Double){
 }
 fun main(){
     println("1 para suma,2 para resta,3 para multiplicacion,4 para division, 5 para potencia,6 para raiz")
-    calculador(1,2.0,3.0)
+    calculador(1, 2.0, 3.0)
 
 
 }

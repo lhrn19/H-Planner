@@ -1,4 +1,0 @@
-package persona
-
-class Album {
-}

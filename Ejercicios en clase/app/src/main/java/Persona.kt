@@ -1,5 +1,3 @@
-package persona
-
 class Persona {
 
     //Atributos
