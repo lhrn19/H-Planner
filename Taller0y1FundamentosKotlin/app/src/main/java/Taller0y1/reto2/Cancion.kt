@@ -1,32 +1,15 @@
-package persona
+package Taller0y1.reto2
 
 class Cancion {
     //Atributos
     var titulo:String ="None"
-        get() {//consultar,normalmente rtorna un valor
-            TODO()
-        }
-
     var artista:String ="None"
-
-        get() {
-            TODO()
-        }
     var year:Int = 0
-        get() {
-            TODO()
-        }
     var reproducciones:Int = 0
-
-        get() {
-            TODO()
-        }
     var popular:Boolean = false
-
-        get() {
-            TODO()
-        }
     constructor()
+
+
     fun pedirDatos() {
         println("Porfavor ingrese el nombre de la cancion")
         this.titulo = readln()
@@ -38,23 +21,32 @@ class Cancion {
 
         println("Porfavor ingrese el num de reproducciones")
         this.reproducciones = readln().toInt()
+        if(this.reproducciones>1000){
+            this.popular =true
 
-        if (this.reproducciones<1000){
+        }
+        else{
             this.popular = false
 
-        }else{
-            this.popular = true
+
         }
 
 
-        this.popular
+
+
+
+    }
+    fun imprimir(){
+        println("La cancion es ${this.titulo}, interpretada por ${this.artista}.Se lanzó en ${this.year}, cantidad de reproducciones ${this.reproducciones}. La canción es popular ${this.popular}")
+
+
     }
 
-}
-fun main()
 
-{
-    val micancion = Cancion()
-    micancion.pedirDatos()
-    micancion.year=2010
+}
+fun main() {
+    val cancion = Cancion()
+    cancion.pedirDatos()
+    cancion.imprimir()
+
 }
