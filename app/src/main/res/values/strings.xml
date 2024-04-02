@@ -21,4 +21,15 @@
     <string name="name_of_category">Name of Category</string>
     <string name="budget_for_category">Budget for Category</string>
     <string name="Add_Category_new">Add Category</string>
+    <string name="add_spending">Add Spending</string>
+    <string name="amount_spent">Amount Spent</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="new_budget">New Budget</string>
+
+    <string-array name="Categories">
+        <item>Home</item>
+        <item>Food &amp; Dinning</item>
+        <item>Health &amp; Fitness</item>
+        <item>Entertainment</item>
+    </string-array>
 </resources>
