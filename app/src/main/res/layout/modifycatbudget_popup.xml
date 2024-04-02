@@ -47,7 +47,8 @@
         android:layout_marginBottom="20dp"
         android:background="@drawable/rounded"
         android:backgroundTint="#94D0D4D4"
-        android:textAlignment="center" />
+        android:textAlignment="center"
+        android:inputType="number"/>
 
 
     <Button
