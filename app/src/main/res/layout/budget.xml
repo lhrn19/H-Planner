@@ -28,6 +28,7 @@
             android:backgroundTint="@color/white"
             android:src="@drawable/add_box" />
     </LinearLayout>
+
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
