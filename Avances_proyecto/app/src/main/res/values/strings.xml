@@ -2,6 +2,9 @@
     /// Titulos de las apps
     <string name="modify_event_titulo">Modify Event</string>
     <string name="daily_view">Daily View</string>
+    <string name="your_calendars">Your Calendars</string>
+    <string name="new_acc">New account</string>
+    <string name="Profile_info">Profile Information</string>
 
 
 
@@ -43,7 +46,6 @@
     <string name="upcoming_events">Upcoming events</string>
     <string name="weekly_view">Weekly View</string>
     <string name="semana_mostrada">Feb 1(-)5</string>
-    <string name="your_calendars">Your Calendars</string>
     <string name="new_habits">New Habit</string>
     <string name="event_not_1">Meeting with Jhon</string>
     <string name="event_not_2">Doctor´s appointment</string>
@@ -52,7 +54,14 @@
     <string name="hora_not_1">10:00 AM</string>
     <string name="hora_not_2">11:00 AM</string>
 
-    ///ola
+    ///Strings your calendars
+    <string name="created_by_yiu">Created by you</string>
+    <string name="Add_new">Add new</string>
+    <string name="personal">Personal</string>
+    <string name="family">Family</string>
+    <string name="work">Work</string>
+
+
 
 
 
@@ -67,7 +76,6 @@
     <string name="W">W</string>
 
     <string name="welcome_message">Welcome to your routine planner!</string>
-    <string name="Profile_info">Profile Information</string>
     <string name="email">Email</string>
     <string name="bith">Birthday</string>
     <string name="phone">Phone</string>
@@ -102,7 +110,7 @@
 
 
 
-    <string name="new_acc">New account</string>
+
 
 
     <string name="username">Username</string>
