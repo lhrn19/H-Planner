@@ -1,4 +1,30 @@
 <resources>
+    /// Titulos de las apps
+    <string name="modify_event_titulo">Modify Event</string>
+
+
+
+    ///Strings Modify Event
+
+    <string name="calendar">Calendar</string>
+    <string name="day_of_the_week">Day of the week</string>
+    <string name="Everyday">Everyday</string>
+    <string name="Every_week">Every week</string>
+    <string name="Every_month">Every month</string>
+    <string name="Never">Never</string>
+    <string name="Repeat">Repeat</string>
+    <string name="All_day">All day</string>
+    <string name="Reminder">Reminder</string>
+    <string name="before">minutes before</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="Discard">Discard</string>
+    <string name="save">Save</string>
+
+    ///ola
+
+
+
     <string name="app_name">prueba2</string>
     <string name="add_new_event">Add new event</string>
     <string name="name_of_event">Name of event</string>

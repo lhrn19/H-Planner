@@ -75,8 +75,8 @@
                 tools:fontFamily="@font/montserrat_light" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="30dp"
+                android:layout_width="335dp"
 
                 android:orientation="horizontal">
 
@@ -188,83 +188,14 @@
 
         </LinearLayout>
 
-
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/rounded"
-            android:backgroundTint="#D0D4D4"
-            android:orientation="horizontal"
-            tools:layout_editor_absoluteX="44dp"
-            tools:layout_editor_absoluteY="480dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:backgroundTint="#D0D4D4"
-                android:orientation="horizontal"
-                android:padding="20dp">
-
-                <TextView
-                    android:id="@+id/title3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/mon"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="15dp"
-                    tools:fontFamily="@font/montserrat_light" />
-                <TextView
-                    android:id="@+id/title30"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/tue"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="15dp"
-                    tools:fontFamily="@font/montserrat_light" />
-                <TextView
-                    android:id="@+id/title31"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/wed"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="15dp"
-                    tools:fontFamily="@font/montserrat_light" />
-                <TextView
-                    android:id="@+id/title32"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/thu"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="15dp"
-                    tools:fontFamily="@font/montserrat_light" />
-                <TextView
-                    android:id="@+id/title33"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/fri"
-                    android:textColor="#000000"
-                    android:textStyle="bold"
-                    android:layout_marginHorizontal="15dp"
-                    tools:fontFamily="@font/montserrat_light" />
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-
-
         <LinearLayout
             android:layout_width="409dp"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             tools:layout_editor_absoluteY="451dp">
 
             <ImageView
@@ -308,6 +239,88 @@
 
         </LinearLayout>
 
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded"
+            android:backgroundTint="#D0D4D4"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="44dp"
+            tools:layout_editor_absoluteY="480dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:backgroundTint="#D0D4D4"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="@string/mon"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:fontFamily="@font/montserrat_light" />
+
+                <TextView
+                    android:id="@+id/title30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="@string/tue"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:fontFamily="@font/montserrat_light" />
+
+                <TextView
+                    android:id="@+id/title31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="@string/wed"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:fontFamily="@font/montserrat_light" />
+
+                <TextView
+                    android:id="@+id/title32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="@string/thu"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:fontFamily="@font/montserrat_light" />
+
+                <TextView
+                    android:id="@+id/title33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="15dp"
+                    android:text="@string/fri"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    tools:fontFamily="@font/montserrat_light" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
     </LinearLayout>
 
 
@@ -318,12 +331,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="620dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/button"
-            android:layout_width="213dp"
+            android:layout_width="190dp"
             android:layout_height="wrap_content"
             android:backgroundTint="#40CFFF"
             tools:fontFamily="@font/montserrat_light"
@@ -332,7 +345,7 @@
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="196dp"
+            android:layout_width="190dp"
             android:layout_height="wrap_content"
             tools:fontFamily="@font/montserrat_light"
             android:backgroundTint="#40CFFF"
