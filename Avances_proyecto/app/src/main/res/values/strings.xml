@@ -1,6 +1,7 @@
 <resources>
     /// Titulos de las apps
     <string name="modify_event_titulo">Modify Event</string>
+    <string name="daily_view">Daily View</string>
 
 
 
@@ -20,6 +21,36 @@
     <string name="to">To:</string>
     <string name="Discard">Discard</string>
     <string name="save">Save</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+
+    ///Strings Daily views
+
+    <string name="dia_actual">Monday 15 of February, 2024</string>
+    <string name="evento_reciente1">Presentation of project</string>
+    <string name="evento_reciente2">Interview</string>
+    <string name="hora_1">9:00 AM</string>
+    <string name="hora_2">10:00 AM</string>
+    <string name="hora_3">11:00 AM</string>
+    <string name="evento_none">none</string>
+
+
+    ///Strings Dashboards
+
+    <string name="upcoming_events">Upcoming events</string>
+    <string name="weekly_view">Weekly View</string>
+    <string name="semana_mostrada">Feb 1(-)5</string>
+    <string name="your_calendars">Your Calendars</string>
+    <string name="new_habits">New Habit</string>
+    <string name="event_not_1">Meeting with Jhon</string>
+    <string name="event_not_2">Doctor´s appointment</string>
+    <string name="event_not_3">Skincare routine</string>
+    <string name="hora_not_3">9:00 AM</string>
+    <string name="hora_not_1">10:00 AM</string>
+    <string name="hora_not_2">11:00 AM</string>
 
     ///ola
 
@@ -77,20 +108,6 @@
     <string name="username">Username</string>
     <string name="name">Name</string>
 
-    <string name="upcoming_events">Upcoming events</string>
-    <string name="weekly_view">Weekly View</string>
-    <string name="semana_mostrada">Feb 1(-)5</string>
-    <string name="your_calendars">Your Calendars</string>
-    <string name="new_habits">New Habit</string>
-    <string name="event_not_1">Meeting with Jhon</string>
-    <string name="event_not_2">Doctor´s appointment</string>
-    <string name="event_not_3">Skincare routine</string>
-    <string name="hora_not_3">9:00 AM</string>
-    <string name="hora_not_1">10:00 AM</string>
-    <string name="hora_not_2">11:00 AM</string>
-    <string name="mon">Mon</string>
-    <string name="tue">Tue</string>
-    <string name="wed">Wed</string>
-    <string name="thu">Thu</string>
-    <string name="fri">Fri</string>
+
+
 </resources>
