@@ -25,7 +25,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="@string/modify_event_titulo"
+            android:text="@string/add_new_event"
             android:textSize="20sp"
             tools:fontFamily="@font/montserrat_light"
             tools:layout_editor_absoluteX="93dp"
@@ -273,7 +273,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="#40CFFF"
             tools:fontFamily="@font/montserrat_light"
-            android:text="@string/Discard"
+            android:text="@string/Add_new"
             android:textColor="#100000" />
 
         <Button
@@ -284,7 +284,7 @@
             android:backgroundTint="#40CFFF"
             android:foregroundTint="#03A9F4"
             android:textColor="#100000"
-            android:text="@string/save" />
+            android:text="@string/Discard" />
     </LinearLayout>
 
 

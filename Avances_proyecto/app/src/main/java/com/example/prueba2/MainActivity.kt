@@ -6,6 +6,6 @@ import android.os.Bundle
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState) //create profile,change password,user_info
-        setContentView(R.layout.your_calendars)
+        setContentView(R.layout.add_new_event)
     }
 }

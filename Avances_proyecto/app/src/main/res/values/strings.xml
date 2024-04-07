@@ -5,6 +5,8 @@
     <string name="your_calendars">Your Calendars</string>
     <string name="new_acc">New account</string>
     <string name="Profile_info">Profile Information</string>
+    <string name="add_new_event">Add new event</string>
+
 
 
 
@@ -69,7 +71,7 @@
 
 
     <string name="app_name">prueba2</string>
-    <string name="add_new_event">Add new event</string>
+
     <string name="name_of_event">Name of event</string>
     <string name="event1">event1</string>
     <string name="M">M</string>
