@@ -60,6 +60,9 @@
     <string name="personal">Personal</string>
     <string name="family">Family</string>
     <string name="work">Work</string>
+    <string name="created_by_you">Created by you</string>
+    <string name="other">Others</string>
+    <string name="colombian_holiday">Colombian Holidays</string>
 
 
 
