@@ -8,8 +8,6 @@
     <string name="add_new_event">Add new event</string>
 
 
-
-
     ///Strings Modify Event
 
     <string name="calendar">Calendar</string>
@@ -67,9 +65,6 @@
     <string name="colombian_holiday">Colombian Holidays</string>
 
 
-
-
-
     <string name="app_name">prueba2</string>
 
     <string name="name_of_event">Name of event</string>
@@ -98,7 +93,6 @@
     <string name="change_password">Change password</string>
 
 
-
     <string name="create_acc">Create account</string>
 
     <string name="delete">Delete account</string>
@@ -113,14 +107,40 @@
     <string name="sign_up_free">Sign-up here for free!</string>
 
 
-
-
-
-
-
     <string name="username">Username</string>
     <string name="name">Name</string>
+    <string name="january_spending_categories">January Spending Categories</string>
+    <string name="january_budget">January Budget</string>
+    <string name="_1300_of_2000">1300 of 2000</string>
+    <string name="keep_it_up_you_can_save_up_to_500_this_month">Keep it up! You can save up to 500 this month.</string>
+    <string name="modify_budget">Modify Budget</string>
+    <string name="spending_through_the_week">Spending through the week</string>
+    <string name="home_budget">Home Budget</string>
+    <string name="home">Home</string>
+    <string name="food_dinning"><![CDATA[Food & Dinning]]></string>
+    <string name="health_fitness"><![CDATA[Health & Fitness]]></string>
+    <string name="add_category">Add Category</string>
+    <string name="add_spending">Add Spending</string>
+    <string name="amount_spent">Amount Spent</string>
+    <string name="budget_for_category">Budget for category</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="add_category_new">Add Category</string>
+    <string name="edit_category">Edit Category</string>
+    <string name="new_category_name">New Category Name</string>
+    <string name="save_changes">Save changes</string>
+    <string name="delete_category">Delete Category</string>
+    <string name="delete_cat">Delete</string>
+    <string name="save_category">Save</string>
+    <string name="modify_budget_popup">Modify Budget</string>
+    <string name="new_budget">New Budget</string>
+    <string name="add_new_category">Add New Category</string>
+    <string name="name_of_category">Name of Category</string>
+    <string name="add_category_new_new">Add Category</string>
 
+    <!-- Menu
+    //<string name="app_name">Navigation Drawer</string>-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
 
 
 </resources>

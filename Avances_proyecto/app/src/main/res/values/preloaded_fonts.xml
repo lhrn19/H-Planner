@@ -4,6 +4,7 @@
         <item>@font/montserrat_2</item>
         <item>@font/montserrat_black</item>
         <item>@font/montserrat_light</item>
+        <item>@font/montserrat_medium</item>
         <item>@font/montserrat_thin</item>
     </array>
 </resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "548410618821",
+    "project_id": "hiplanner-27477",
+    "storage_bucket": "hiplanner-27477.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548410618821:android:562ca4e67ae609ed1991ac",
+        "android_client_info": {
+          "package_name": "com.example.prueba2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8LXhz4OZg1V4Ney2-M8noGuksFSFBrc8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
