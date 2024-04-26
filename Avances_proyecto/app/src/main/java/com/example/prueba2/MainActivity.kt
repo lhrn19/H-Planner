@@ -23,10 +23,33 @@ class MainActivity : AppCompatActivity() {
         toolbar = findViewById(R.id.toolbar)
         navigationView =findViewById(R.id.navigationView)
 
+
+        toolbar.setNavigationOnClickListener {
+            drawerLayout.open()
+        }
+
+        navigationView.setNavigationItemSelectedListener { menuItem ->
+            // Handle menu item selected
+            menuItem.isChecked = true
+            when(menuItem.itemId){
+                R.id.nav_account ->{
+                    true
+                }
+                R.id.nav_settings ->{
+                    true
+                }
+                R.id.nav_logout ->{
+                    true
+                }
+                else ->{false}
+            }
+            drawerLayout.close()
+            true
+        }
+        /*
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar.setHomeAsUpIndicator(R.drawable.menu)
-
         navigationView.setNavigationItemSelectedListener { menuItem ->
             when(menuItem.itemId){
                 R.id.nav_account ->{
@@ -40,12 +63,12 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 else ->{false}
-            }
+            }*/
 
         }
     }
 
-
+    /*
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             android.R.id.home ->{
@@ -55,4 +78,4 @@ class MainActivity : AppCompatActivity() {
             else -> {super.onOptionsItemSelected(item)}
         }
     }
-}
+}*/

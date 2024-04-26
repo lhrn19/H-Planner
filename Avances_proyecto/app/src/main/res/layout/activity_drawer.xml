@@ -8,19 +8,32 @@ android:id="@+id/drawerLayout"
 android:layout_width="match_parent"
 android:layout_height="match_parent">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <TextView
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:gravity="center"
-        android:text="App"
-        android:textSize="18sp" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
 
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.AppBarLayout.PrimarySurface"
+            android:fitsSystemWindows="true">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#FEF7FF"
+                android:elevation="0dp"
+                app:navigationIcon="@drawable/menu" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <!-- Screen content -->
+        <!-- Use app:layout_behavior="@string/appbar_scrolling_view_behavior" to fit below top app bar -->
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 <!-- this the navigation view which draws and shows the navigation drawer -->
 <!-- include the menu created in the menu folder -->
 <com.google.android.material.navigation.NavigationView
