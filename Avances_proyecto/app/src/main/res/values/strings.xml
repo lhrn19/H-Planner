@@ -1,0 +1,126 @@
+<resources>
+    /// Titulos de las apps
+    <string name="modify_event_titulo">Modify Event</string>
+    <string name="daily_view">Daily View</string>
+    <string name="your_calendars">Your Calendars</string>
+    <string name="new_acc">New account</string>
+    <string name="Profile_info">Profile Information</string>
+    <string name="add_new_event">Add new event</string>
+
+
+
+
+    ///Strings Modify Event
+
+    <string name="calendar">Calendar</string>
+    <string name="day_of_the_week">Day of the week</string>
+    <string name="Everyday">Everyday</string>
+    <string name="Every_week">Every week</string>
+    <string name="Every_month">Every month</string>
+    <string name="Never">Never</string>
+    <string name="Repeat">Repeat</string>
+    <string name="All_day">All day</string>
+    <string name="Reminder">Reminder</string>
+    <string name="before">minutes before</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="Discard">Discard</string>
+    <string name="save">Save</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+
+    ///Strings Daily views
+
+    <string name="dia_actual">Monday 15 of February, 2024</string>
+    <string name="evento_reciente1">Presentation of project</string>
+    <string name="evento_reciente2">Interview</string>
+    <string name="hora_1">9:00 AM</string>
+    <string name="hora_2">10:00 AM</string>
+    <string name="hora_3">11:00 AM</string>
+    <string name="evento_none">none</string>
+
+
+    ///Strings Dashboards
+
+    <string name="upcoming_events">Upcoming events</string>
+    <string name="weekly_view">Weekly View</string>
+    <string name="semana_mostrada">Feb 1(-)5</string>
+    <string name="new_habits">New Habit</string>
+    <string name="event_not_1">Meeting with Jhon</string>
+    <string name="event_not_2">Doctor´s appointment</string>
+    <string name="event_not_3">Skincare routine</string>
+    <string name="hora_not_3">9:00 AM</string>
+    <string name="hora_not_1">10:00 AM</string>
+    <string name="hora_not_2">11:00 AM</string>
+
+    ///Strings your calendars
+    <string name="created_by_yiu">Created by you</string>
+    <string name="Add_new">Add new</string>
+    <string name="personal">Personal</string>
+    <string name="family">Family</string>
+    <string name="work">Work</string>
+    <string name="created_by_you">Created by you</string>
+    <string name="other">Others</string>
+    <string name="colombian_holiday">Colombian Holidays</string>
+
+
+
+
+
+    <string name="app_name">prueba2</string>
+
+    <string name="name_of_event">Name of event</string>
+    <string name="event1">event1</string>
+    <string name="M">M</string>
+    <string name="F">F</string>
+    <string name="Th">Th</string>
+    <string name="T">Tue</string>
+    <string name="W">W</string>
+
+    <string name="welcome_message">Welcome to your routine planner!</string>
+    <string name="email">Email</string>
+    <string name="bith">Birthday</string>
+    <string name="phone">Phone</string>
+    <string name="gender">Gender</string>
+    <string name="signout">Sign-out</string>
+    <string name="changepass">Change Password</string>
+    <string name="help">Help</string>
+    <string name="change_pass">Change your current password</string>
+
+
+    <string name="confirm_new_pass">Confirm new password</string>
+    <string name="create_new_pass">New password</string>
+    <string name="confirm_past_pass">Confirm last password</string>
+
+    <string name="change_password">Change password</string>
+
+
+
+    <string name="create_acc">Create account</string>
+
+    <string name="delete">Delete account</string>
+
+    <string name="hi_planner">H! PLANNER</string>
+
+    <string name="confirm_mail">Confirm mail</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="password">Password</string>
+    <string name="donthave">Don´t have an account?</string>
+
+    <string name="sign_up_free">Sign-up here for free!</string>
+
+
+
+
+
+
+
+    <string name="username">Username</string>
+    <string name="name">Name</string>
+
+
+
+</resources>
