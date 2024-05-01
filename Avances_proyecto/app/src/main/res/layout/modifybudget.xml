@@ -226,7 +226,7 @@
             android:background="@drawable/rounded">
 
             <ImageButton
-                android:id="@+id/backmain"
+                android:id="@+id/back_to_main"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/white"

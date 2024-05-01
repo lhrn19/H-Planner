@@ -101,7 +101,7 @@
             tools:layout_editor_absoluteY="80dp"/>
 
         <ImageButton
-            android:id="@+id/returnspending"
+            android:id="@+id/returncategories"
             android:layout_width="20dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"

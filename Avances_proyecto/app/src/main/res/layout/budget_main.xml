@@ -24,7 +24,7 @@
                 android:src="@drawable/menu" />
 
             <ImageButton
-                android:id="@+id/newcategory"
+                android:id="@+id/addnewspending"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="270dp"

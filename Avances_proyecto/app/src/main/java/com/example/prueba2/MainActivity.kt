@@ -15,8 +15,8 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_drawer)
-
+        setContentView(R.layout.budget_main)}}
+        /*
         // drawer layout instance to toggle the menu icon to open
         // drawer and back button to close drawer
         drawerLayout = findViewById(R.id.drawerLayout)
@@ -33,9 +33,6 @@ class MainActivity : AppCompatActivity() {
             menuItem.isChecked = true
             when(menuItem.itemId){
                 R.id.nav_account ->{
-                    true
-                }
-                R.id.nav_settings ->{
                     true
                 }
                 R.id.nav_logout ->{
@@ -79,3 +76,4 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }*/
+         */

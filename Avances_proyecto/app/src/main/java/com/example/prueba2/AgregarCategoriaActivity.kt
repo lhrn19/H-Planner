@@ -3,15 +3,13 @@ package com.example.prueba2
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.database.FirebaseDatabase
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.Button
 import android.widget.EditText
 
 
 class AgregarCategoriaActivity : AppCompatActivity() {
 
-    private val database = FirebaseDatabase.getInstance().reference.child("productos")
+    private val database = FirebaseDatabase.getInstance().reference.child("category")
     private lateinit var editTextNameCat: EditText
     private lateinit var editTextBudgetCat: EditText
     private lateinit var btnSaveNewCategory: Button
@@ -25,7 +23,7 @@ class AgregarCategoriaActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.btnSaveNewCategory).setOnClickListener {
             val name = editTextNameCat.text.toString()
-            val budget = editTextBudgetCat.text
+            val budget = editTextBudgetCat
 
             // Crear un nuevo producto en Firebase
             val categoryId = database.push().key

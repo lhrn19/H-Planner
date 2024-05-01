@@ -13,6 +13,30 @@
         android:theme="@style/Theme.Prueba2"
         tools:targetApi="31">
         <activity
+            android:name=".NewCategory_popup_activity"
+            android:exported="false" />
+        <activity
+            android:name=".EditCategory_popup_activity"
+            android:exported="false" />
+        <activity
+            android:name=".ModifyBudget_popup_activity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryBudget_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_drawer_menu"
+            android:exported="false" />
+        <activity
+            android:name=".AddSpending_popup_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Budget_main_activity"
+            android:exported="false" />
+        <activity
+            android:name=".ModifyBudget_activity"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity
@@ -24,6 +48,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AgregarCategoriaActivity"
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"
