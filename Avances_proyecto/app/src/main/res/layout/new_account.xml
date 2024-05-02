@@ -52,7 +52,7 @@
             android:gravity="center"
             android:text="Username:"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="22dp" />
 
         <LinearLayout
             android:layout_width="320dp"
@@ -66,7 +66,7 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="156dp"
+            android:layout_width="109dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="110dp"
@@ -75,7 +75,7 @@
             android:gravity="center"
             android:text="Name:"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="22sp" />
 
         <LinearLayout
             android:layout_width="320dp"
@@ -89,7 +89,7 @@
         </LinearLayout>
 
         <TextView
-            android:layout_width="156dp"
+            android:layout_width="109dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="110dp"
@@ -98,7 +98,7 @@
             android:gravity="center"
             android:text="Email:"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="22sp" />
 
         <LinearLayout
             android:layout_width="320dp"
@@ -122,13 +122,13 @@
             android:gravity="center"
             android:text="Confirm email:"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="22sp" />
 
         <LinearLayout
             android:layout_width="320dp"
             android:layout_height="36dp"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/boton_gestiones"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -145,13 +145,13 @@
             android:gravity="center"
             android:text="Telefone:"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="22sp" />
 
         <LinearLayout
             android:layout_width="320dp"
             android:layout_height="36dp"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/boton_gestiones"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -168,13 +168,13 @@
             android:gravity="center"
             android:text="Password:"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="22sp" />
 
         <LinearLayout
             android:layout_width="320dp"
             android:layout_height="36dp"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/boton_gestiones"
             android:gravity="center_vertical"
             android:orientation="horizontal">
@@ -191,7 +191,7 @@
             android:gravity="center"
             android:text="Confirm Password:"
             android:textColor="#000000"
-            android:textSize="25sp" />
+            android:textSize="22sp" />
 
         <LinearLayout
             android:layout_width="320dp"
