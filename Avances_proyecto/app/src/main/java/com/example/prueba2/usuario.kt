@@ -2,18 +2,26 @@ package com.example.prueba2
 
 public class Usuario() {
     var nombre: String = ""
-    var usuarioId: String = ""
     var username: String = ""
     var email: String = ""
+    var birthday: String = ""
     var telefone: String = ""
     var gender: String = ""
     var password: String = ""
 
-    constructor(nombre: String, usuarioId: String, username: String,  email : String, telefone: String, gender: String, password: String) : this() {
+    constructor(
+        nombre: String,
+        username: String,
+        email: String,
+        birthday: String,
+        telefone: String,
+        gender: String,
+        password: String
+    ) : this() {
         this.nombre = nombre
-        this.usuarioId = usuarioId
         this.username = username
         this.email = email
+        this.birthday = birthday
         this.telefone = telefone
         this.gender = gender
         this.password = password
@@ -59,4 +67,11 @@ public class Usuario() {
         this.gender = gender
     }
 
+    fun getPassword(): String {
+        return password
+    }
+
+    fun setPassword(password: String) {
+        this.password = password
+    }
 }

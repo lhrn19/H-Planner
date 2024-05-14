@@ -60,18 +60,19 @@ class AccountManagerActivity(private val usuario: Usuario) : AppCompatActivity()
 
     private fun crearUsuario() {
         val nombre = editTextNombre.text.toString().trim()
-        val usuario = editTextUsuario.text.toString().trim()
+        val username = editTextUsuario.text.toString().trim()
         val email = editTextEmail.text.toString().trim()
-        val telefono = editTextTelefone.text.toString().trim()
-        val genero = editTextGenero.text.toString().trim()
-        val contraseña = editTextContraseña.text.toString().trim()
+        val birthday = editTextBirthday.text.toString().trim()
+        val telefone = editTextTelefone.text.toString().trim()
+        val gender = editTextGenero.text.toString().trim()
+        val password = editTextContraseña.text.toString().trim()
 
-        if (nombre.isEmpty() || usuario.isEmpty() || email.isEmpty() || telefono.isEmpty() || genero.isEmpty() || contraseña.isEmpty()) {
+        if (nombre.isEmpty() || username.isEmpty() || email.isEmpty() || telefone.isEmpty() || gender.isEmpty() || password.isEmpty() || birthday.isEmpty()) {
             Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
             return
         }
 
-        val nuevoUsuario = Usuario(nombre, usuario, telefono, email, genero, contraseña)
+        val nuevoUsuario = Usuario(nombre, username, email, telefone, gender, password, birthday)
         Usuarios.crearUsuario(nuevoUsuario) { exito ->
             if (exito) {
                 Toast.makeText(this, "Usuario agregado correctamente", Toast.LENGTH_SHORT).show()
@@ -91,19 +92,22 @@ class AccountManagerActivity(private val usuario: Usuario) : AppCompatActivity()
 
     private fun actualizarUsuario() {
         val nombre = editTextNombre2.text.toString().trim()
-        val usuario = editTextUsuario2.text.toString().trim()
+        val username = editTextUsuario2.text.toString().trim()
         val birthday = editTextBirthday.text.toString().trim()
-        val telefono = editTextTelefone2.text.toString().trim()
+        val email = editTextEmail.text.toString().trim()
+        val telefone = editTextTelefone2.text.toString().trim()
+        val gender = editTextGender2.text.toString().trim()
+        val password = editTextContraseña.text.toString().trim()
 
-        if (nombre.isEmpty() || usuario.isEmpty() || birthday.isEmpty() || telefono.isEmpty()) {
+        if (nombre.isEmpty() || username.isEmpty() || telefone.isEmpty() || birthday.isEmpty() || gender.isEmpty() || password.isEmpty() || email.isEmpty()) {
             Toast.makeText(this, "Por favor, complete todos los campos", Toast.LENGTH_SHORT).show()
             return
         }
 
-        Usuarios.consultarUsuarioPorUsuario(nombre) { usuario ->
+        Usuarios.consultarUsuarioPorUsuario(username) { usuario ->
             if (usuario != null) {
-                val actualizarUsuario = Usuario(nombre, usuario, birthday, telefono)
-                Usuarios.actualizarUsuario(usuario.usuarioId, actualizarUsuario) { exito ->
+                val actualizarUsuario = Usuario(nombre, username, telefone, gender, birthday, email, password)
+                Usuarios.actualizarUsuario(usuario.username, actualizarUsuario) { exito ->
                     if (exito) {
                         Toast.makeText(
                             this,
