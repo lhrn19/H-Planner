@@ -6,12 +6,36 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/calendar"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/calendar"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Prueba2"
+        android:theme="@style/Theme.INTENTO"
         tools:targetApi="31">
+        <activity
+            android:name=".Prueba"
+            android:exported="false" />
+        <activity
+            android:name=".Fetching_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Track_habit_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Daily_view_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Modify_event_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Add_new_event_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Your_calendars_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Event_detail_activity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -21,6 +45,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

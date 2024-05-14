@@ -1,4 +1,4 @@
-package com.example.prueba2
+package com.example.intento
 
 import org.junit.Test
 

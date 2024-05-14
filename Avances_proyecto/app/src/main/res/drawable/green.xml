@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state -->
+    <item android:state_pressed="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/blue" /> <!-- Change to your desired pressed color -->
+        </shape>
+    </item>
+    <!-- Normal state -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#A0E687" /> <!-- Change to your desired normal color -->
+        </shape>
+    </item>
+</selector>

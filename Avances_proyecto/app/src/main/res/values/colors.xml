@@ -4,4 +4,14 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#5587C5</color>
     <color name="gray">#BBC0C6</color>
+
+
+    <color name="colorOn">#34C759</color>
+    <color name="colorOff">#D1D1D6</color>
+    <color name="trackColorOn">#CC34C759</color>
+    <color name="WEEK_COLOR">#40CFFF</color>
+    <color name="trackColorOff">#4DD1D1D6</color>
+    <color name="azul_bello">#006691</color>
+
+
 </resources>

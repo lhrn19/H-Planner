@@ -5,9 +5,8 @@
     <string name="your_calendars">Your Calendars</string>
     <string name="new_acc">New account</string>
     <string name="Profile_info">Profile Information</string>
-    <string name="add_new_event">Add new event</string>
-
-
+    <string name="add_new_event">Add New Event</string>
+    <string name="modify">Modify</string>
 
 
     ///Strings Modify Event
@@ -24,13 +23,38 @@
     <string name="before">minutes before</string>
     <string name="from">From:</string>
     <string name="to">To:</string>
+    <string name="from1">From</string>
+    <string name="evid">ID</string>
+    <string name="to1">To</string>
     <string name="Discard">Discard</string>
     <string name="save">Save</string>
     <string name="mon">Mon</string>
     <string name="tue">Tue</string>
     <string name="wed">Wed</string>
+    <string name="sa">Sat</string>
     <string name="thu">Thu</string>
     <string name="fri">Fri</string>
+    <string name="sun">Sun</string>
+    <string name="cero">0</string>
+    <string name="n13">13</string>
+    <string name="n14">14</string>
+    <string name="n15">15</string>
+    <string name="n16">16</string>
+    <string name="n17">17</string>
+    <string name="n18">18</string>
+    <string name="n19">19</string>
+    <string name="n20">20</string>
+    <string name="n21">21</string>
+    <string name="n22">22</string>
+    <string name="n23">23</string>
+    <string name="n24">24</string>
+    <string name="n25">25</string>
+    <string name="n26">26</string>
+    <string name="n27">27</string>
+    <string name="n28">28</string>
+    <string name="n29">29</string>
+    <string name="n30">30</string>
+    <string name="n31">31</string>
 
     ///Strings Daily views
 
@@ -38,6 +62,7 @@
     <string name="evento_reciente1">Presentation of project</string>
     <string name="evento_reciente2">Interview</string>
     <string name="hora_1">9:00 AM</string>
+    <string name="hora_cero">00:00</string>
     <string name="hora_2">10:00 AM</string>
     <string name="hora_3">11:00 AM</string>
     <string name="evento_none">none</string>
@@ -45,7 +70,7 @@
 
     ///Strings Dashboards
 
-    <string name="upcoming_events">Upcoming events</string>
+    <string name="upcoming_events">Todays upcoming events</string>
     <string name="weekly_view">Weekly View</string>
     <string name="semana_mostrada">Feb 1(-)5</string>
     <string name="new_habits">New Habit</string>
@@ -57,22 +82,24 @@
     <string name="hora_not_2">11:00 AM</string>
 
     ///Strings your calendars
-    <string name="created_by_yiu">Created by you</string>
+    <string name="created_by_you">Designed for you</string>
     <string name="Add_new">Add new</string>
+    <string name="daily_v">Your Daily View</string>
+    <string name="finish">Mark as finish</string>
+    <string name="delete_event">Delete</string>
+    <string name="Emp_name">empty</string>
+    <string name="add">Add</string>
     <string name="personal">Personal</string>
     <string name="family">Family</string>
     <string name="work">Work</string>
-    <string name="created_by_you">Created by you</string>
     <string name="other">Others</string>
     <string name="colombian_holiday">Colombian Holidays</string>
-
-
-
 
 
     <string name="app_name">prueba2</string>
 
     <string name="name_of_event">Name of event</string>
+    <string name="event">Event</string>
     <string name="event1">event1</string>
     <string name="M">M</string>
     <string name="F">F</string>
@@ -98,7 +125,6 @@
     <string name="change_password">Change password</string>
 
 
-
     <string name="create_acc">Create account</string>
 
     <string name="delete">Delete account</string>
@@ -113,14 +139,14 @@
     <string name="sign_up_free">Sign-up here for free!</string>
 
 
-
-
-
-
-
     <string name="username">Username</string>
+    <string name="back">Back</string>
     <string name="name">Name</string>
 
+
+    //Strings track
+    <string name="track">Track your habits</string>
+    <string name="track_message">You have completed your goal only 3 days this week. Keep going!</string>
 
 
 </resources>

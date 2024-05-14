@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "prueba2"
+rootProject.name = "INTENTO"
 include(":app")
  

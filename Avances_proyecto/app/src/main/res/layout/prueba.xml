@@ -1,6 +1,52 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" tools:context=".RegistroUsuarioActivity">
-    <EditText android:id="@+id/editTextNombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nombre"/>
-    <EditText android:id="@+id/editTextCorreo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/editTextNombre" android:hint="Correo electrónico"/>
-    <EditText android:id="@+id/editTextContraseña" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@id/editTextCorreo" android:hint="Contraseña" android:inputType="textPassword"/>
-    <Button android:id="@+id/buttonRegistrar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/editTextContraseña" android:text="Registrar"/>
-</RelativeLayout>
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:layout_weight="1"
+            android:id="@id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/M"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            tools:fontFamily="@font/montserrat_medium" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCat"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            tools:listitem="@layout/emp_list_item" />
+
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
