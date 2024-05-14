@@ -29,8 +29,9 @@ class MainActivity : AppCompatActivity() {
     fun change_password(view:View){
         setContentView(R.layout.login)
     }
-
-    //no me acuerdo si el nombre de la función debe ser igual al de la clase en conexiones.kt
+    fun update(view: View){
+        setContentView(R.layout.profile_information)
+    }
 
 }
 

@@ -4,7 +4,7 @@ import androidx.activity.ComponentActivity
 import android.widget.LinearLayout
 import android.widget.Button
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
+import com.example.prueba2.R
 
 class create_account : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -94,3 +94,23 @@ class regresar_change_password : ComponentActivity() {
     }
 }
 
+class edit_profile_information : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.profile_information)
+        val layout_regresar_change_password = findViewById<LinearLayout>(R.id.edit_profile_information)
+        layout_regresar_change_password.setOnClickListener {
+            setContentView(R.layout.edit_profile_information)
+        }
+    }
+}
+class update : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.edit_profile_information)
+        val boton_sign_out = findViewById<Button>(R.id.update)
+        boton_sign_out.setOnClickListener {
+            setContentView(R.layout.profile_information)
+        }
+    }
+}

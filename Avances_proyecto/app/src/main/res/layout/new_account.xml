@@ -99,6 +99,7 @@
             tools:fontFamily="@font/montserrat_light"/>
 
         <EditText
+            android:id="@+id/editText_username_na"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
@@ -124,6 +125,7 @@
             />
 
         <EditText
+            android:id="@+id/editText_name_na"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
@@ -148,6 +150,7 @@
             tools:fontFamily="@font/montserrat_light" />
 
         <EditText
+            android:id="@+id/editText_email_na"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
@@ -160,19 +163,20 @@
 
 
         <TextView
-            android:layout_width="145dp"
+            android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
-            android:layout_marginRight="87dp"
+            android:layout_marginRight="120dp"
             android:layout_marginBottom="2dp"
             android:baselineAligned="false"
             android:gravity="center"
-            android:text="Confirm email:"
+            android:text="Gender:"
             android:textColor="#000000"
             android:textSize="20sp"
             tools:fontFamily="@font/montserrat_light"/>
 
         <EditText
+            android:id="@+id/editText_gender_na"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
@@ -197,6 +201,7 @@
             tools:fontFamily="@font/montserrat_light"/>
 
         <EditText
+            android:id="@+id/editText_telefone_na"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
@@ -221,6 +226,7 @@
             tools:fontFamily="@font/montserrat_light"/>
 
         <EditText
+            android:id="@+id/editText_password_na"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
@@ -244,7 +250,8 @@
             android:textSize="20sp"
             tools:fontFamily="@font/montserrat_light"/>
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/editText_confirm_password_na"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
@@ -252,7 +259,7 @@
             android:background="@drawable/boton_gestiones"
             android:gravity="center_vertical"
             android:orientation="horizontal">
-        </LinearLayout>
+        </EditText>
 
         <Button
             android:id="@+id/create_account"
