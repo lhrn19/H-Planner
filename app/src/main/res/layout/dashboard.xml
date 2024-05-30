@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:scrollbarTrackHorizontal="@drawable/button_background"
+    android:scrollbarTrackVertical="@drawable/button_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/menu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="220dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/M"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:text="@string/welcome_message"
+            android:textColor="#006691"
+            android:textSize="25sp"
+            tools:fontFamily="@font/montserrat_medium"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="60dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/upcoming_event" />
+
+            <TextView
+                android:id="@+id/upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upcoming_events"
+                android:textSize="20dp"
+                tools:fontFamily="@font/montserrat_light"
+                tools:layout_editor_absoluteX="162dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvEvento"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:backgroundTint="#B2E8DAB6"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:listitem="@layout/emp_list_item" />
+
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="451dp">
+
+            <ImageView
+                android:id="@+id/calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/weekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/weekly_view"
+                android:textSize="20sp"
+                tools:fontFamily="@font/montserrat_light"
+                tools:layout_editor_absoluteX="162dp"
+                tools:layout_editor_absoluteY="145dp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:backgroundTint="#D0D4D4"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:backgroundTint="#D0D4D4"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:backgroundTint="#177777"
+
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="66dp"
+
+                        android:id="@+id/monday_button"
+                        android:layout_height="65dp"
+                        android:backgroundTint="@color/WEEK_COLOR"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/rounded"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/mon"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_gravity="center"
+                            tools:fontFamily="@font/montserrat_light" />
+
+
+                        <TextView
+                            android:id="@+id/title3_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_gravity="center"
+                            android:text="@string/n13"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            tools:fontFamily="@font/montserrat_light" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="66dp"
+                        android:layout_height="65dp"
+                        android:id="@+id/tuesday_button"
+                        android:backgroundTint="@color/WEEK_COLOR"
+                        android:background="@drawable/rounded"
+                        android:layout_marginEnd="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title_tue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/tue"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            tools:fontFamily="@font/montserrat_light" />
+
+                        <TextView
+                            android:id="@+id/title_tue_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="15dp"
+                            android:text="@string/n14"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            tools:fontFamily="@font/montserrat_light" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="66dp"
+                        android:layout_height="65dp"
+                        android:backgroundTint="@color/WEEK_COLOR"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/wednesday_button"
+                        android:background="@drawable/rounded"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title_wed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:text="@string/wed"
+                            android:textColor="@color/white"
+                            android:layout_gravity="center"
+                            android:textStyle="bold"
+                            tools:fontFamily="@font/montserrat_light" />
+
+                        <TextView
+                            android:id="@+id/title_wed_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_gravity="center"
+                            android:text="@string/n15"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            tools:fontFamily="@font/montserrat_light" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="66dp"
+                        android:layout_height="65dp"
+                        android:backgroundTint="@color/WEEK_COLOR"
+                        android:layout_marginEnd="5dp"
+                        android:id="@+id/thursday_button"
+                        android:background="@drawable/rounded"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title_thu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_gravity="center"
+                            android:text="@string/thu"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            tools:fontFamily="@font/montserrat_light" />
+
+                        <TextView
+                            android:id="@+id/title_thu_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="15dp"
+                            android:text="@string/n16"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            tools:fontFamily="@font/montserrat_light" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+                </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:backgroundTint="#D0D4D4"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:backgroundTint="#177777"
+                android:orientation="horizontal"
+                >
+
+                <LinearLayout
+                    android:layout_width="66dp"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/WEEK_COLOR"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/friday_button"
+                    android:background="@drawable/rounded"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_fri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:text="@string/fri"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:fontFamily="@font/montserrat_light" />
+
+                    <TextView
+                        android:id="@+id/title_fri_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:text="@string/n17"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:fontFamily="@font/montserrat_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="66dp"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/WEEK_COLOR"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/saturday_button"
+                    android:background="@drawable/rounded"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_sa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:text="@string/sa"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:fontFamily="@font/montserrat_light" />
+
+                    <TextView
+                        android:id="@+id/title_sa_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:text="@string/n18"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:fontFamily="@font/montserrat_light" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="66dp"
+                    android:layout_height="65dp"
+                    android:backgroundTint="@color/WEEK_COLOR"
+                    android:layout_marginEnd="5dp"
+                    android:id="@+id/sunday_button"
+                    android:background="@drawable/rounded"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title_sun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_gravity="center"
+                        android:text="@string/sun"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:fontFamily="@font/montserrat_light" />
+
+                    <TextView
+                        android:id="@+id/title_sun_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="15dp"
+                        android:text="@string/n19"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        tools:fontFamily="@font/montserrat_light" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="620dp"
+        android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/show_calendars"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#006691"
+            android:textColor="@color/white"
+            android:text="@string/your_calendars" />
+
+        <Button
+            android:id="@+id/go_new_habit"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#006691"
+            android:textColor="@color/white"
+            android:text="@string/new_habits" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

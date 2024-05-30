@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#FFFFFF"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="25dp"
+                android:gravity="center"
+                android:onClick="regresar_profile_info"
+                android:textColor="@android:color/white"
+                tools:ignore="SpeakableTextPresentCheck">
+
+                <ImageButton
+                    android:id="@+id/regresar_new_account"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/arrow_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="245dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="bottom|right"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="bottom|right"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white">
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="0dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="New Account"
+            android:textColor="#006691"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:fontFamily="@font/montserrat_light"/>
+
+        <TextView
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="105dp"
+            android:layout_marginBottom="2dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Username:"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            tools:fontFamily="@font/montserrat_light"/>
+
+        <EditText
+            android:id="@+id/editText_username_na"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/boton_gestiones"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="125dp"
+            android:layout_marginBottom="2dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Name:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:fontFamily="@font/montserrat_light"
+            />
+
+        <EditText
+            android:id="@+id/editText_name_na"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/boton_gestiones"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="125dp"
+            android:layout_marginBottom="2dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Email:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:fontFamily="@font/montserrat_light" />
+
+        <EditText
+            android:id="@+id/editText_email_na"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/boton_gestiones"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:inputType="textEmailAddress">
+
+        </EditText>
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="2dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Gender:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:fontFamily="@font/montserrat_light"/>
+
+        <EditText
+            android:id="@+id/editText_gender_na"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/boton_gestiones"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="115dp"
+            android:layout_marginBottom="2dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Telefone:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:fontFamily="@font/montserrat_light"/>
+
+        <EditText
+            android:id="@+id/editText_telefone_na"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/boton_gestiones"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:inputType="phone">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="115dp"
+            android:layout_marginBottom="2dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Birthday:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:fontFamily="@font/montserrat_light"/>
+
+        <EditText
+            android:id="@+id/editText_birthday_na"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_gestiones"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:inputType="datetime">
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="110dp"
+            android:layout_marginBottom="2dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Password:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:fontFamily="@font/montserrat_light"/>
+
+        <EditText
+            android:id="@+id/editText_password_na"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/boton_gestiones"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="2dp"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:text="Confirm Password:"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            tools:fontFamily="@font/montserrat_light"/>
+
+        <EditText
+            android:id="@+id/editText_confirm_password_na"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/boton_gestiones"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        </EditText>
+
+        <Button
+            android:id="@+id/create_account"
+            android:layout_width="150dp"
+            android:onClick="create_account"
+            android:layout_height="48dp"
+            android:backgroundTint="#2499C7"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/botton_out"
+            android:gravity="center"
+            android:text="Create Account"
+            android:textColor="@android:color/white">
+
+
+        </Button>
+    </LinearLayout>
+</ScrollView>
