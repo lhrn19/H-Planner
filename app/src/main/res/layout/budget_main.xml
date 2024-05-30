@@ -2,7 +2,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,16 +56,17 @@
                 tools:fontFamily="@font/montserrat_medium"
                 android:textSize="25sp"/>
 
-            <View
-                android:id="@+id/pie_chart"
+            <com.github.mikephil.charting.charts.PieChart
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
                 android:layout_marginTop="40dp"
-                android:layout_marginStart="50dp"
-                android:layout_width="300dp"
-                android:layout_height="350dp"
-                android:gravity="center"
-                android:src="@drawable/menu"
-                tools:layout_editor_absoluteX="50dp"
-                tools:layout_editor_absoluteY="150dp" />
+                android:id="@+id/pieChart"
+                app:layout_constraintBottom_toBottomOf = "parent"
+                app:layout_constraintEnd_toEndOf = "parent"
+                app:layout_constraintStart_toStartOf = "parent"
+                app:layout_constraintTop_toTopOf = "parent"
+                />
+
 
             <ImageButton
                 android:id="@+id/gocategories"
@@ -92,7 +94,7 @@
                 android:id="@+id/title2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/january_budget"
+                android:text="Total Spending"
                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#000000"
                 android:textStyle="bold"

@@ -7,46 +7,53 @@
     app:cardElevation="8dp"
     app:cardCornerRadius="8dp"
     android:layout_margin="8dp"
-    android:backgroundTint="@color/Blue4">
+    android:id="@+id/linearLayout">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="10dp"
-        android:padding="20dp">
+        android:id="@+id/cardcolor"
+        android:background="@color/Blue2">
 
-        <TextView
-            android:id="@+id/titlebudget1"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/home"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            tools:fontFamily="@font/montserrat_medium"
-            android:textSize="20sp"
-            />
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:padding="20dp">
 
-        <TextView
-            android:id="@+id/amount"
+            <TextView
+                android:id="@+id/titlebudget1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                tools:fontFamily="@font/montserrat_medium"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/_1300_of_2000"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                tools:fontFamily="@font/montserrat_medium" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/edit1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_1300_of_2000"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="#000000"
-            android:textStyle="bold"
-            tools:fontFamily="@font/montserrat_medium" />
-
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="300dp"
+            android:backgroundTint="@color/Blue4"
+            android:src="@drawable/editar" />
     </LinearLayout>
-
-    <ImageButton
-        android:id="@+id/edit1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_marginStart="300dp"
-        android:backgroundTint="@color/Blue4"
-        android:src="@drawable/editar" />
 
 </androidx.cardview.widget.CardView>

@@ -49,17 +49,31 @@
             tools:fontFamily="@font/montserrat_light"
             android:textSize="18sp"/>
 
-        <EditText
-            android:id="@+id/editTextNameCat"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/categoryinput"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="20dp"
-            android:background="@drawable/rounded"
-            android:backgroundTint="#94D0D4D4"
-            android:textAlignment="center" />
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/rounded"
+                android:backgroundTint="#94D0D4D4"
+                android:inputType="none"
+                android:text="@string/choose_category"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="#000000"
+                tools:fontFamily="@font/montserrat_light" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
             android:id="@+id/budget"
@@ -91,13 +105,15 @@
             android:id="@+id/btnSaveNewCategory"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="245dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="30dp"
             android:backgroundTint="@color/Blue1"
             android:text="@string/add_category_new_new"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="@color/white"
             android:textStyle="bold"
-            tools:fontFamily="@font/montserrat_medium" />
+            tools:fontFamily="@font/montserrat_medium"
+            android:layout_gravity="end"/>
 
 
     </LinearLayout>

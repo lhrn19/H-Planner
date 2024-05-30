@@ -30,7 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="@string/add_spending"
+            android:text="Add or Modify Spending"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#000000"
@@ -38,7 +38,7 @@
             tools:fontFamily="@font/montserrat_medium" />
 
         <TextView
-            android:id="@+id/amountSpent"
+            android:id="@+id/amountwee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
@@ -64,7 +64,7 @@
         <TextView
             android:id="@+id/category"
             android:layout_width="wrap_content"
-            android:layout_height="17dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:text="Category"
@@ -74,16 +74,14 @@
             tools:fontFamily="@font/montserrat_light" />
 
         <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:id="@+id/categoryinput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="20dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
             >
 
             <AutoCompleteTextView
@@ -106,13 +104,42 @@
             android:id="@+id/saveNewSpending"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="245dp"
+            android:layout_marginStart="0dp"
             android:backgroundTint="@color/Blue3"
             android:text="@string/add_spending_save"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
             android:textColor="#000000"
             android:textStyle="bold"
-            tools:fontFamily="@font/montserrat_medium" />
+            tools:fontFamily="@font/montserrat_medium"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:text="*If you want to delete category:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:fontFamily="@font/montserrat_light"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="0dp"
+            android:text="Choose category and set amount to 0"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            tools:fontFamily="@font/montserrat_light"
+            android:layout_gravity="center"/>
+
+
 
 
     </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication;
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,6 +10,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.internal.NavigationMenuItemView
 import com.google.android.material.navigation.NavigationView
 
 
@@ -40,25 +41,37 @@ class Activity_drawer_menu : AppCompatActivity() {
             // Handle menu item selected
             menuItem.isChecked = true
             when(menuItem.itemId){
-                R.id.nav_calendar ->{
+                R.id.nav_calendar -> {
+
+                    val intent_mod_bud = Intent(this, CategoryBudget_activity::class.java)
+                    startActivity(intent_mod_bud)
                     setContentView(R.layout.dashboard)
                     true
-                }
-                R.id.nav_tracking ->{
-                    setContentView(R.layout.dashboard)
-                    true
+
                 }
                 R.id.nav_account ->{
-
+                    val idUsername = intent.getStringExtra("idUsername").toString()
+                    val intent_mod_bud = Intent(this, ConsultarUserActivity::class.java)
+                    intent_mod_bud.putExtra("idUsername", idUsername)
+                    startActivity(intent_mod_bud)
                     true
                 }
                 R.id.nav_budget->{
-                    val go_to_modify_close: ImageButton = findViewById(R.id.nav_budget)
-                    go_to_modify_close.setOnClickListener{
-                        /*Toast.makeText(this,"New event was correctly added", Toast.LENGTH_SHORT).show()*/
-                        val intent_mod_bud = Intent(this, MainActivity::class.java)
-                        startActivity(intent_mod_bud)}
                     setContentView(R.layout.budget_main)
+
+                    val intent_mod_bud = Intent(this, Budget_main_activity::class.java)
+                    startActivity(intent_mod_bud)
+                    setContentView(R.layout.budget_main)
+
+                    true
+                }
+                R.id.nav_logout->{
+                    setContentView(R.layout.budget_main)
+
+                    val intent_mod_bud = Intent(this, Budget_main_activity::class.java)
+                    startActivity(intent_mod_bud)
+                    setContentView(R.layout.budget_main)
+
                     true
                 }
                 else ->{false}

@@ -3,8 +3,6 @@
 
     <style name="AppTheme.BackgroundColor" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="android:windowBackground">@color/white</item>
-        <!-- Add primary color -->
-        <item name="colorPrimary">@color/Blue2</item>
     </style>
 
     <style name="Base.Theme.MyApplication" parent="AppTheme.BackgroundColor">

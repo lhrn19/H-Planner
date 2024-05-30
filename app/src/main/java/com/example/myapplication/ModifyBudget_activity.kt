@@ -10,9 +10,11 @@ import android.widget.ImageButton
 import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.prueba2.Category
+import com.example.myapplication.Category
+import com.example.myapplication.R.color
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
@@ -24,19 +26,20 @@ class ModifyBudget_activity : AppCompatActivity() {
     private lateinit var categoryRV: RecyclerView
     private lateinit var catList: ArrayList<Category>
     private lateinit var databaseRef: DatabaseReference
+    private lateinit var amount2: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.modifybudget)
 
         categoryRV = findViewById(R.id.rvCat)
+        amount2 = findViewById(R.id.amount2)
         categoryRV.layoutManager = LinearLayoutManager(this)
         categoryRV.setHasFixedSize(true)
 
         catList = arrayListOf<Category>()
 
         getCategories()
-
 
         val go_new_category: Button = findViewById(R.id.addcategory)
         go_new_category.setOnClickListener{
@@ -80,6 +83,14 @@ class ModifyBudget_activity : AppCompatActivity() {
                             startActivity(intent)
                         }
                     })
+
+
+
+                    val totalBudget = catList.sumBy { it.budget?.toIntOrNull() ?: 0 }
+                    println("Total budget: $totalBudget")
+                    amount2.text = totalBudget.toString()
+
+
                     categoryRV.visibility = View.VISIBLE
                 }
             }

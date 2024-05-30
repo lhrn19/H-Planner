@@ -8,4 +8,11 @@
     <color name="Blue2">#2499C7</color>
     <color name="Blue3">#40CFFF</color>
     <color name="Blue4">#CDFFFF</color>
+    <color name="Blue5">#22B9B9</color>
+    <color name="selected_red">#DB8C8A</color>
+    <color name="selected_green">#AFE492</color>
+    <color name="selected_purple">#8A9DE0</color>
+    <color name="selected_yellow">#DAD294</color>
+    <color name="selected_blue">#87BAE6</color>
+    <color name="selected_orange">#E39164</color>
 </resources>

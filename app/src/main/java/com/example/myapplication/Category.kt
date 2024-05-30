@@ -1,4 +1,4 @@
-package com.example.prueba2
+package com.example.myapplication
 
 import android.widget.EditText
 
@@ -7,3 +7,4 @@ data class Category(
     val name: String? = null,
     val budget: String? = null
 )
+

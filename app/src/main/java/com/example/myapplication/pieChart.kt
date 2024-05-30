@@ -1,72 +1,61 @@
 package com.example.myapplication
 
 import android.content.Intent
+import android.graphics.Color
 import android.graphics.Typeface
-import android.os.Bundle
-import android.widget.ImageButton
-import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.myapplication.databinding.ActivityPieChartBinding
-import com.example.myapplication.databinding.BudgetMainBinding
-import com.github.mikephil.charting.components.Legend
-import com.github.mikephil.charting.data.PieData
-import com.github.mikephil.charting.data.PieDataSet
-import com.github.mikephil.charting.data.PieEntry
-import com.github.mikephil.charting.interfaces.datasets.IPieDataSet
-import com.github.mikephil.charting.utils.MPPointF
+import com.androidplot.pie.Segment
+import com.androidplot.pie.SegmentFormatter
+import com.example.myapplication.pieChart
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.example.myapplication.databinding.ActivityPieChartBinding
+import com.github.mikephil.charting.animation.Easing
+import com.github.mikephil.charting.components.Legend
+import com.github.mikephil.charting.data.PieData
+import com.github.mikephil.charting.data.PieDataSet
+import com.github.mikephil.charting.data.PieEntry
+import com.github.mikephil.charting.interfaces.datasets.IPieDataSet
+import com.github.mikephil.charting.utils.ColorTemplate
+import com.github.mikephil.charting.utils.MPPointF
 
-
-class Budget_main_activity : AppCompatActivity() {
+class pieChart : AppCompatActivity() {
     private lateinit var spendingList: ArrayList<Spending>
     private lateinit var databaseRef: DatabaseReference
-    private lateinit var binding: BudgetMainBinding
+    private lateinit var binding: ActivityPieChartBinding
     val spendingValues = ArrayList<PieEntry>()
-    private lateinit var amount: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = BudgetMainBinding.inflate(layoutInflater)
+
+        binding = ActivityPieChartBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         spendingList = arrayListOf<Spending>()
-        amount = findViewById(R.id.amount)
+
+        println(spendingList)
 
         getSpendings(object : SpendingsCallback {
             override fun onSpendingsLoaded(amounts: List<Int>, categories: List<String>) {
                 for (i in amounts.indices) {
+                    //
+                    println(amounts[i])
+                    println(categories[i])
                     val formattedLabel = "${categories[i]}\n: ${amounts[i]}"
                     spendingValues.add(PieEntry(amounts[i].toFloat(), formattedLabel))
                 }
                 setChart()
-
             }
         })
 
-        val go_new_spending: ImageButton = findViewById(R.id.addnewspending)
-        go_new_spending.setOnClickListener{
-            /*Toast.makeText(this,"New event was correctly added", Toast.LENGTH_SHORT).show()*/
-            val intent_new_spending = Intent(this, AddSpending_popup_activity::class.java)
-            startActivity(intent_new_spending)}
 
-        val go_to_budget_main: ImageButton = findViewById(R.id.gocategories)
-        go_to_budget_main.setOnClickListener{
-            val intent_budget = Intent(this, ModifyBudget_activity::class.java)
-            startActivity(intent_budget)}
-
-        val go_menu_drawer: ImageButton = findViewById(R.id.menu)
-        go_menu_drawer.setOnClickListener{
-            val intent_menu = Intent(this, Activity_drawer_menu::class.java)
-            startActivity(intent_menu)}
     }
     private fun getSpendings(callback: SpendingsCallback){
         databaseRef = FirebaseDatabase.getInstance().getReference("New_Spending")
@@ -87,16 +76,8 @@ class Budget_main_activity : AppCompatActivity() {
                         catList.add(spending.category ?: "Unknown")
                     }
 
-                    val totalSpending = spendingList.sumBy { it.amount?.toIntOrNull() ?: 0 }
-
                     println(arrayList)
                     println(catList)
-                    println(totalSpending)
-
-                    amount.text = totalSpending.toString()
-
-
-
                     callback.onSpendingsLoaded(arrayList, catList)
 
                 }
@@ -118,11 +99,11 @@ class Budget_main_activity : AppCompatActivity() {
         }else{
             pieDataSettter = PieDataSet(spendingValues,"")
 
-            val blue1 = ContextCompat.getColor(this, R.color.selected_red)
-            val blue2 = ContextCompat.getColor(this, R.color.selected_green)
-            val blue3 = ContextCompat.getColor(this, R.color.selected_purple)
-            val blue4 = ContextCompat.getColor(this, R.color.selected_blue)
-            val blue5 = ContextCompat.getColor(this, R.color.selected_orange)
+            val blue1 = ContextCompat.getColor(this, R.color.Blue1)
+            val blue2 = ContextCompat.getColor(this, R.color.Blue2)
+            val blue3 = ContextCompat.getColor(this, R.color.Blue3)
+            val blue4 = ContextCompat.getColor(this, R.color.Blue4)
+            val blue5 = ContextCompat.getColor(this, R.color.blue)
 
             // Set custom colors to PieDataSet
             pieDataSettter.colors = listOf(blue1, blue2,blue3,blue5,blue4)
@@ -146,7 +127,16 @@ class Budget_main_activity : AppCompatActivity() {
             val boldTypeface = Typeface.create(typeface, Typeface.BOLD)
             binding.pieChart.setEntryLabelTypeface(boldTypeface)
 
-            binding.pieChart.legend.isEnabled = false
+            val legend = binding.pieChart.legend
+            legend.verticalAlignment = Legend.LegendVerticalAlignment.TOP
+            legend.horizontalAlignment = Legend.LegendHorizontalAlignment.CENTER
+            legend.orientation = Legend.LegendOrientation.HORIZONTAL
+            legend.xOffset = 0f
+            legend.yOffset = 0f
+            legend.textSize = 15f
+            legend.formSize = 16f
+            legend.xEntrySpace = 40f
+            legend.yEntrySpace = 50f
 
 
             binding.pieChart.setExtraOffsets(0f, 0f, 0f, 10f)
@@ -157,4 +147,5 @@ class Budget_main_activity : AppCompatActivity() {
     interface SpendingsCallback {
         fun onSpendingsLoaded(amounts: List<Int>, categories: List<String>)
     }
+
 }

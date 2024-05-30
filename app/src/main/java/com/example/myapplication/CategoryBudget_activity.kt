@@ -12,7 +12,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.example.prueba2.Category
+import com.example.myapplication.Category
 import com.google.firebase.database.FirebaseDatabase
 
 class CategoryBudget_activity : AppCompatActivity() {
@@ -21,6 +21,7 @@ class CategoryBudget_activity : AppCompatActivity() {
     private lateinit var tvBudget: TextView
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
+    private lateinit var titleCategory : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -74,6 +75,7 @@ class CategoryBudget_activity : AppCompatActivity() {
     private fun initView(){
         tvId = findViewById(R.id.tvEmpId)
         tvName = findViewById(R.id.tvEmpName)
+        titleCategory = findViewById(R.id.titleCategory)
 
         btnUpdate = findViewById(R.id.btnUpdate)
         btnDelete = findViewById(R.id.btnDelete)
@@ -82,6 +84,7 @@ class CategoryBudget_activity : AppCompatActivity() {
     private fun setValues(){
         tvId.text = intent.getStringExtra("name")
         tvName.text = intent.getStringExtra("budget")
+        titleCategory.text = intent.getStringExtra("name")
 
     }
     private fun openUpdateDialog(catId:String,catName:String){
