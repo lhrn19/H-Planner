@@ -21,7 +21,6 @@
         android:orientation="horizontal">
 
         <LinearLayout
-            android:id="@+id/regresar_profile_info"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="15dp"
@@ -32,7 +31,8 @@
             android:textColor="@android:color/white"
             tools:ignore="SpeakableTextPresentCheck">
 
-            <ImageView
+            <ImageButton
+                android:id="@+id/regresar_profile_info"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:scaleType="centerCrop"
@@ -58,7 +58,6 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/edit_profile_information"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="20dp"
                 android:layout_width="65dp"
@@ -66,9 +65,10 @@
                 android:gravity="center"
                 android:textColor="@android:color/white">
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                <ImageButton
+                    android:id="@+id/edit_profile_information"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:scaleType="centerCrop"
                     android:src="@drawable/editar" />
             </LinearLayout>
@@ -104,13 +104,22 @@
         tools:fontFamily="@font/montserrat_light"/>
 
     <LinearLayout
+
         android:layout_width="320dp"
         android:layout_height="40dp"
         android:layout_marginTop="2dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/boton_gestiones"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/LinearLayoutUsername">
+        </TextView>
 
     </LinearLayout>
 
@@ -137,6 +146,13 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/LinearLayoutName">
+        </TextView>
+
     </LinearLayout>
 
     <TextView
@@ -160,6 +176,13 @@
         android:background="@drawable/boton_gestiones"
         android:gravity="center_vertical"
         android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/LinearLayoutEmail">
+        </TextView>
 
     </LinearLayout>
 
@@ -186,6 +209,13 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/LinearLayoutBirthday">
+        </TextView>
+
     </LinearLayout>
 
     <TextView
@@ -209,6 +239,13 @@
         android:background="@drawable/boton_gestiones"
         android:gravity="center_vertical"
         android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/LinearLayoutTelefone">
+        </TextView>
 
     </LinearLayout>
 
@@ -234,21 +271,29 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="18sp"
+            android:id="@+id/LinearLayoutGender">
+        </TextView>
+
     </LinearLayout>
 
-    <TextView
+    <Button
         android:id="@+id/change_password"
         android:onClick="change_password"
-        android:layout_width="150dp"
+        android:layout_width="190dp"
         android:layout_height="48dp"
         android:layout_marginBottom="20dp"
         android:layout_marginRight="70dp"
         android:baselineAligned="false"
         android:gravity="center"
         android:text="Change Password"
-        android:textColor="#2499C7"
+        android:textColor="#FFFFFF"
         android:textSize="15sp"
-        android:textStyle="bold" />
+        android:textStyle="bold">
+    </Button>
 
     <Button
         android:id="@+id/sign_out"
@@ -259,7 +304,7 @@
         android:layout_width="150dp"
         android:layout_height="48dp"
         android:background="@drawable/botton_out"
-        android:text="Sign-out"
+        android:text="Log-out"
         android:gravity="center"
         android:textColor="@android:color/white">
 

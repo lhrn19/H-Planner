@@ -8,8 +8,6 @@
     <string name="add_new_event">Add new event</string>
 
 
-
-
     ///Strings Modify Event
 
     <string name="calendar">Calendar</string>
@@ -67,9 +65,6 @@
     <string name="colombian_holiday">Colombian Holidays</string>
 
 
-
-
-
     <string name="app_name">prueba2</string>
 
     <string name="name_of_event">Name of event</string>
@@ -98,7 +93,6 @@
     <string name="change_password">Change password</string>
 
 
-
     <string name="create_acc">Create account</string>
 
     <string name="delete">Delete account</string>
@@ -113,14 +107,8 @@
     <string name="sign_up_free">Sign-up here for free!</string>
 
 
-
-
-
-
-
     <string name="username">Username</string>
     <string name="name">Name</string>
-
 
 
 </resources>

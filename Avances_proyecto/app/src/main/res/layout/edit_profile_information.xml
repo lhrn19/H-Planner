@@ -21,7 +21,6 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/regresar_profile_info"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="15dp"
@@ -32,7 +31,8 @@
                 android:textColor="@android:color/white"
                 tools:ignore="SpeakableTextPresentCheck">
 
-                <ImageView
+                <ImageButton
+                    android:id="@+id/regresar_update_profile_info"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:scaleType="centerCrop"
@@ -150,6 +150,7 @@
             tools:fontFamily="@font/montserrat_light"/>
 
         <EditText
+            android:id="@+id/editText_email_upi"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
@@ -157,7 +158,6 @@
             android:background="@drawable/boton_gestiones"
             android:gravity="center_vertical"
             android:orientation="horizontal">
-
         </EditText>
 
 
@@ -165,17 +165,17 @@
             android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
-            android:layout_marginRight="110dp"
+            android:layout_marginRight="115dp"
             android:layout_marginBottom="2dp"
             android:baselineAligned="false"
             android:gravity="center"
-            android:text="Birthday:"
+            android:text="Gender:"
             android:textColor="#000000"
             android:textSize="20sp"
             tools:fontFamily="@font/montserrat_light"/>
 
         <EditText
-            android:id="@+id/editText_birthday_upi"
+            android:id="@+id/editText_gender_upi"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
@@ -190,7 +190,7 @@
             android:layout_width="88dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
-            android:layout_marginRight="110dp"
+            android:layout_marginRight="115dp"
             android:layout_marginBottom="2dp"
             android:baselineAligned="false"
             android:gravity="center"
@@ -208,32 +208,31 @@
             android:background="@drawable/boton_gestiones"
             android:gravity="center_vertical"
             android:orientation="horizontal">
-
         </EditText>
 
+
         <TextView
-            android:layout_width="80dp"
+            android:layout_width="88dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="115dp"
             android:layout_marginBottom="2dp"
             android:baselineAligned="false"
             android:gravity="center"
-            android:text="Gender:"
+            android:text="Birthday:"
             android:textColor="#000000"
             android:textSize="20sp"
             tools:fontFamily="@font/montserrat_light"/>
 
         <EditText
-            android:id="@+id/editText_gender_upi"
+            android:id="@+id/editText_birthday_upi"
             android:layout_width="320dp"
             android:layout_height="40dp"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="15dp"
             android:background="@drawable/boton_gestiones"
             android:gravity="center_vertical"
             android:orientation="horizontal">
-
         </EditText>
 
         <Button

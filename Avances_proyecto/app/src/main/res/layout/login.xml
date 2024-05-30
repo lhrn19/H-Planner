@@ -96,18 +96,22 @@
             android:textColor="#000000"
             android:textSize="15sp"
             tools:fontFamily="@font/montserrat_light"/>
-        <TextView
+
+        <Button
             android:id="@+id/sign_up"
             android:onClick="sign_up"
-            android:layout_width="156dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_width="150dp"
             android:layout_height="48dp"
-            android:layout_marginBottom="0dp"
-            android:baselineAligned="false"
-            android:gravity="center"
+            android:background="@drawable/boton_out_blanco"
             android:text="Sign-Up"
-            android:textColor="#2499C7"
-            android:textSize="15sp"
-            android:textStyle="bold"/>
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            >
+
+        </Button>
 
         <Button
             android:id="@+id/sign_in"

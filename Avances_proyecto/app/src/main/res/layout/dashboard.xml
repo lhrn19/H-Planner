@@ -3,4 +3,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/prueba"
+        android:onClick="prueba"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:background="@drawable/botton_out"
+        android:text="Update"
+        android:gravity="center"
+        android:textColor="@android:color/white">
+
+    </Button>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
